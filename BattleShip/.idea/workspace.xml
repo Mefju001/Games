@@ -27,7 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "Application.Player.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -89,7 +89,9 @@
       <updated>1747389608000</updated>
       <workItem from="1747389609242" duration="4132000" />
       <workItem from="1747658463216" duration="4229000" />
-      <workItem from="1747674501100" duration="2301000" />
+      <workItem from="1747674501100" duration="7839000" />
+      <workItem from="1747684015229" duration="544000" />
+      <workItem from="1747688623058" duration="1388000" />
     </task>
     <servers />
   </component>
@@ -101,33 +103,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Mefju/Player.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Mefju/Player.java</url>
-          <line>72</line>
+          <line>64</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Mefju/Player.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Mefju/Player.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Mefju/Player.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Mefju/Player.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/Mefju/PlayerHandler.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
