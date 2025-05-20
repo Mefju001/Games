@@ -13,6 +13,7 @@ public class PlayerHandler implements Runnable{
     private final PrintWriter out;
     private PlayerHandler opponent;
     private final int playerId;
+    private int strike = 0;
     private int[][] grid;
     private static final Map<Character, Integer> index = Map.of(
             'A', 0,
@@ -51,6 +52,17 @@ public class PlayerHandler implements Runnable{
             grid[row][col] = -1;
         }
         return false;
+    }
+    private boolean gameOver()
+    {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 1) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
     private int[]parseMove(String move) {
         move = move.toUpperCase();
@@ -124,10 +136,17 @@ public class PlayerHandler implements Runnable{
 
                         if (hit) {
                             out.println("Trafiony!");
+                            strike++;
                             opponent.out.println("OPPONENT_MOVE " + move + " Trafiony!");
                         } else {
                             out.println("Pudło!");
                             opponent.out.println("OPPONENT_MOVE " + move + " Pudło!");
+                        }
+                        boolean gameFinish = opponent.gameOver();
+                        if(gameFinish) {
+                            out.println("Wygrałeś!");
+                            opponent.out.println("Przegrałeś!");
+                            return;
                         }
                     }
                 }

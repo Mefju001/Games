@@ -35,7 +35,7 @@ public class Player {
                 System.out.println("Disconnected from server.");
             }
         }).start();
-        int[] shipSizes = {4, 3};//, 3, 2, 2, 2, 1, 1, 1, 1
+        int[] shipSizes = {4, 3, 3, 2, 2, 2, 1, 1, 1, 1};
         for (int i = 0; i < shipSizes.length; i++) {
             boolean placed = false;
             while (!placed) {
