@@ -7,5 +7,6 @@ public class Main {
         System.out.println("Hello world!");
         GameServer gameServer = new GameServer();
         gameServer.start(5000);
+
     }
 }
