@@ -18,9 +18,13 @@ public class HangmanServer {
         Socket player2Socket =serverSocket.accept();
         System.out.println("Player 2 connected");
         PlayerHandler player2 = new PlayerHandler(player2Socket,2);
-
+        HangmanGame game = new HangmanGame();
+        player1.setGame(game);
+        player2.setGame(game);
         player1.setOpponent(player2);
         player2.setOpponent(player1);
+        player1.setWordSet(true);
+        player2.setWordSet(false);
         System.out.println("Ustawiono przeciwników");
 
         new Thread(player1).start();
